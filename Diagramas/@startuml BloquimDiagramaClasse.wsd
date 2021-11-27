@@ -1,0 +1,51 @@
+@startuml BloquimDiagramaClasse
+
+class Usuario{
+    -senha : String  
+
+    #verificaSenha() : void 
+    +completaLogin() : void
+}
+
+class Anotacoes{
+    +disciplina : String
+    -anotacoes : String
+    +dataModificacao : String
+
+    +marcacoes() : void
+}
+
+class Caderno{
+    + nome : String 
+    - <Anotacoes> : list
+    + dataCriacao : date 
+    + dataModificacao : date 
+
+    
+
+}
+
+class CadernoAnotacoes{
+
+    +disciplina : String
+    +capitulos : String 
+
+    +inserirAnotacoes() : void
+
+}
+
+class CadernoDiario{
+
+    +humorDoDia : byte
+
+    #verificarCondicoesParaInserirAnotacao() : boolean 
+    +inserirAnotacoes() : void 
+}
+
+Usuario "1" -- "0.."Caderno :Entra no >
+CadernoAnotacoes  "1.." o-- "1.." Anotacoes : < Pertence à 
+CadernoDiario "1.." o-- "1.." Anotacoes : < Pertence à
+Caderno "1" *-- "1.." CadernoAnotacoes : < É um tipo
+Caderno "1" *-- "1.." CadernoDiario : < É um tipo
+
+@enduml

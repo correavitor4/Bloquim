@@ -1,0 +1,48 @@
+@startuml BloquimDiagramaCasos
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+left to right direction
+
+actor Usuario
+
+Package AnotaçõesPrograma{
+(Realizar login) as LOG    
+
+(Criar cadernos) as CREATC
+(Criar caderno diario) as CREATD
+(Criar caderno anotacoes) as CREATA
+(Selecionar cadernos) as SELC
+(Visualizar anotações) as VISUAN
+(Pesquisar Cadernos) as PESQC
+
+(Adicionar anotação) as ADDAN
+(Editar anotação) as EDITAN
+
+(Editar texto) as EXIBET
+
+(Adicionar marcação) as ADDMA
+(Remover marcação) as REMMA
+
+CREATC <. (CREATD) :<extends>
+CREATC <.. (CREATA) :<extends>
+note right of (CREATD):"Caso não exista um."
+
+PESQC .> (SELC) :<extends>
+Usuario --> (VISUAN)
+
+VISUAN ..> (ADDAN) :<extends>
+VISUAN ..> (EDITAN) :<extends>
+
+Usuario --> (CREATC)
+Usuario --> (PESQC) 
+
+Usuario --> (EXIBET)
+
+EXIBET <.. (ADDMA):<extends>
+EXIBET <.. (REMMA):<extends>
+
+
+Usuario --> (LOG)
+
+}
+@enduml
