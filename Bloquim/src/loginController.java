@@ -8,46 +8,55 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
-
-public class ControllerBloquim {
-
-
-    @FXML
-    private Button Botaologin;
-
-    @FXML
-    private Button botaoCadastro;
+public class loginController {
 
     @FXML
-    private TextField passLabel;
+    private Button cadastroBtn;
 
     @FXML
-    private Button recuperarSenha;
+    private Button feitoBtn;
 
     @FXML
-    private TextField userLabel;
+    private TextField nomeTextField;
 
     @FXML
-    public void telaCadastro(ActionEvent event) throws IOException{
+    private Button senhaPerdida;
 
+    @FXML
+    private PasswordField senhaTextBox;
+
+    @FXML
+    void irCadastro(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("telacadastro.fxml"));
         Stage cadastroStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene cadastroscene = new Scene(root);
         cadastroStage.setScene(cadastroscene);
         cadastroStage.show();
-
     }
 
-
-
     @FXML
-    void telaInicial(ActionEvent event) {
+    void loginUsuario(ActionEvent event) {
 
     }
 
     @FXML
-    void telaRecuperaSenha(ActionEvent event) {
+    void realizaLogin(ActionEvent event) {
+
+    }
+
+    @FXML
+    void recuperaSenha(ActionEvent event) {
+
+    }
+
+    @FXML
+    void senhaUsuario(ActionEvent event) {
 
     }
 

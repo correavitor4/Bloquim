@@ -12,7 +12,7 @@ public class App extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("telalogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root = fxmlLoader.load();
         Scene tela = new Scene(root);
         primaryStage.setTitle("Bloquim");
@@ -20,3 +20,6 @@ public class App extends Application{
         primaryStage.show();
     }
 }
+
+
+
