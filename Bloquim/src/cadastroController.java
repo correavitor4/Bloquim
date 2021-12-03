@@ -1,4 +1,3 @@
-package principal.Cadastro;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -6,7 +5,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class cadastroController {
-
 
     @FXML
     private PasswordField confirmaSenhaTextBox;
@@ -35,7 +33,7 @@ public class cadastroController {
 
     @FXML
     void finalizaCadastro(ActionEvent event) {
-
+        
     }
 
     @FXML

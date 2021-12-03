@@ -15,7 +15,6 @@ public class App extends Application{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("telalogin.fxml"));
         Parent root = fxmlLoader.load();
         Scene tela = new Scene(root);
-
         primaryStage.setTitle("Bloquim");
         primaryStage.setScene(tela);
         primaryStage.show();
