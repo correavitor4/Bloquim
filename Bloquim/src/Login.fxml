@@ -22,9 +22,15 @@
             <Font size="11.0" />
          </font>
       </Text>
+<<<<<<< HEAD:Bloquim/src/Login.fxml
       <Button fx:id="feitoBtn" layoutX="225.0" layoutY="333.0" mnemonicParsing="false" onAction="#realizaLogin" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #3F435A;" text="Login" textFill="WHITE" underline="true" />
       <PasswordField fx:id="senhaTextBox" layoutX="51.0" layoutY="213.0" onAction="#senhaUsuario" prefHeight="25.0" prefWidth="226.0" promptText="Senha" style="-fx-background-color: EDEDED;" />
       <TextField fx:id="nomeTextField" layoutX="51.0" layoutY="168.0" onAction="#loginUsuario" prefHeight="25.0" prefWidth="226.0" promptText="Usuário" style="-fx-background-color: EDEDED;">
+=======
+      <Button fx:id="feitoBtn" layoutX="225.0" layoutY="333.0" mnemonicParsing="false" onAction="#finalizaCadastro" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #3F435A;" text="Login" textFill="WHITE" />
+      <PasswordField fx:id="senhaTextBox" layoutX="51.0" layoutY="213.0" onAction="#senhaUsuario" prefHeight="25.0" prefWidth="226.0" promptText="Senha" style="-fx-background-color: EDEDED;" />
+      <TextField fx:id="usuarioTextBox" layoutX="51.0" layoutY="168.0" onAction="#nomeUsuario" prefHeight="25.0" prefWidth="226.0" promptText="Usuário" style="-fx-background-color: EDEDED;">
+>>>>>>> d37c43ec3d38e82be9b1018b14a70f10f6ffa3c2:Login.fxml
          <opaqueInsets>
             <Insets bottom="5.0" />
          </opaqueInsets>
@@ -32,8 +38,13 @@
             <Font name="Arial" size="12.0" />
          </font>
       </TextField>
+<<<<<<< HEAD:Bloquim/src/Login.fxml
       <Button fx:id="senhaPerdida" layoutX="150.0" layoutY="250.0" mnemonicParsing="false" onAction="#recuperaSenha" style="-fx-background-color: tranparent;" text="Esqueci minha senha" textFill="#3f435a" underline="true" />
       <AnchorPane layoutX="351.0" prefHeight="480.0" prefWidth="283.0" style="-fx-background-color: EDEDED;">
+=======
+      <Button fx:id="esqueciSenha" layoutX="150.0" layoutY="250.0" mnemonicParsing="false" onAction="#redefineSenha" prefHeight="0.0" prefWidth="127.0" style="-fx-background-color: tranparent;" text="Esqueci minha senha" textFill="#3f435a" underline="true" />
+      <AnchorPane layoutX="307.0" prefHeight="401.0" prefWidth="287.0" style="-fx-background-color: EDEDED;">
+>>>>>>> d37c43ec3d38e82be9b1018b14a70f10f6ffa3c2:Login.fxml
          <children>
             <ImageView fitHeight="150.0" fitWidth="220.0" layoutX="42.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,6 +53,10 @@
             </ImageView>
          </children>
       </AnchorPane>
+<<<<<<< HEAD:Bloquim/src/Login.fxml
       <Button fx:id="cadastroBtn" layoutX="63.0" layoutY="333.0" mnemonicParsing="false" onAction="#irCadastro" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #3F435A;" text="Cadastro" textFill="WHITE" underline="true" />
+=======
+      <Button fx:id="cadastreSeBtn" layoutX="198.0" layoutY="275.0" mnemonicParsing="false" onAction="#vaiTelaCadastro" prefHeight="0.0" prefWidth="79.0" style="-fx-background-color: tranparent;" text="Cadastre-se" textFill="#3f435a" underline="true" />
+>>>>>>> d37c43ec3d38e82be9b1018b14a70f10f6ffa3c2:Login.fxml
    </children>
 </AnchorPane>
