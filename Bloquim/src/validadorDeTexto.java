@@ -15,5 +15,13 @@ public class validadorDeTexto {
         }
         return resposta;
     }
+
+    public static boolean validarSenha(String senhaText) {
+        boolean resposta = false;
+        if(senhaText.length()>0 && senhaText!=null){
+            resposta=true;
+        }
+        return resposta;
+    }
 }
 
