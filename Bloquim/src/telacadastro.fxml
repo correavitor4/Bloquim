@@ -32,6 +32,7 @@
             <PasswordField fx:id="confirmaSenhaTextBox" layoutX="55.0" layoutY="352.0" onAction="#confirmaSenhaUsuario" promptText="Confirma senha" />
             <TextField fx:id="nomeTextBox" layoutX="51.0" layoutY="138.0" onAction="#nomeUsuario" promptText="Usuario" />
             <TextField fx:id="emailTextBox" layoutX="51.0" layoutY="190.0" onAction="#emailUsuario" promptText="Email" />
+            <Button fx:id="voltarBtn" layoutX="380.0" layoutY="428.0" mnemonicParsing="false" onAction="#voltaTela" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: #3F435A;" text="Voltar" textFill="WHITE" underline="true" />
          </children>
       </AnchorPane>
    </children>
