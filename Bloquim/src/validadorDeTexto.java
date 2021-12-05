@@ -18,10 +18,16 @@ public class validadorDeTexto {
 
     public static boolean validarSenha(String senhaText) {
         boolean resposta = false;
-        if(senhaText.length()>0 && senhaText!=null){
+        if(senhaText.length()>8 && senhaText!=null){
             resposta=true;
         }
         return resposta;
     }
+    /*
+    public static boolean validarUsuario() {
+        boolean resposta = false;
+        String expressao= "[\w]";
+    }
+    */
 }
 
