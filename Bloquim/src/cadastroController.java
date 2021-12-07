@@ -38,12 +38,19 @@ public class cadastroController {
 
     @FXML
     void emailUsuario(ActionEvent event) {
-
+        
     }
 
     @FXML
     void finalizaCadastro(ActionEvent event) {
-
+        if(!validadorDeTexto.validarEmail(emailTextBox.getText())){
+            System.out.println("Email inválido");
+            return;
+        }
+        if(!validadorDeTexto.validarSenha(senhaTextBox.getText())){
+            System.out.println("Senha inválida");
+            return;
+        }
     }
 
     @FXML

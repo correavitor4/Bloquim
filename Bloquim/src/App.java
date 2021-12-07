@@ -3,6 +3,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class App extends Application{
     public static void main(String[] args) throws Exception {
@@ -17,6 +18,7 @@ public class App extends Application{
         Scene tela = new Scene(root);
         primaryStage.setTitle("Bloquim");
         primaryStage.setScene(tela);
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.show();
     }
 }
