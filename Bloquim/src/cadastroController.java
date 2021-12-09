@@ -72,7 +72,7 @@ public class cadastroController {
 
     @FXML
     void voltaTela(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/Login.fxml"));
         Stage loginStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene loginScene = new Scene(root);
         loginStage.setScene(loginScene);

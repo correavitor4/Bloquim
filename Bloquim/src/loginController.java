@@ -58,7 +58,7 @@ public class loginController {
 
     @FXML
     void vaiTelaCadastro(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("telacadastro.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/FXML/telacadastro.fxml"));
         Stage cadastroStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene cadastroscene = new Scene(root);
         cadastroStage.setScene(cadastroscene);
