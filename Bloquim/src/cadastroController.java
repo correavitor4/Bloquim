@@ -3,6 +3,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -21,6 +22,9 @@ public class cadastroController {
     @FXML
     private Button feitoBtn;
 
+    @FXML
+    private Text erroMensagemText;
+    
     @FXML
     private TextField nomeTextBox;
 
@@ -45,18 +49,26 @@ public class cadastroController {
 
     @FXML
     void fechaAba(ActionEvent event) {
-
+        System.exit(0);
     }
 
     @FXML
     void finalizaCadastro(ActionEvent event) {
         if(!validadorDeTexto.validarEmail(emailTextBox.getText())){
             System.out.println("Email inválido");
+            erroMensagemText.setVisible(true);
+            erroMensagemText.setText("O email digitado é inválido");
             return;
+
         }
         if(!validadorDeTexto.validarSenha(senhaTextBox.getText())){
             System.out.println("Senha inválida");
+            erroMensagemText.setVisible(true);
+            erroMensagemText.setText("A senha digitada é inválida");
             return;
+        }
+        else{
+            erroMensagemText.setVisible(false);
         }
     }
 
