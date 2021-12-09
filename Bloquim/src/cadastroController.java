@@ -10,7 +10,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 public class cadastroController {
 
     @FXML
@@ -32,13 +31,21 @@ public class cadastroController {
     private Button voltarBtn;
 
     @FXML
+    private Button xBtn;
+
+    @FXML
     void confirmaSenhaUsuario(ActionEvent event) {
 
     }
 
     @FXML
     void emailUsuario(ActionEvent event) {
-        
+
+    }
+
+    @FXML
+    void fechaAba(ActionEvent event) {
+
     }
 
     @FXML

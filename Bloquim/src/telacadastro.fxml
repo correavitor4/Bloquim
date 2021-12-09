@@ -12,12 +12,12 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
          <children>
-            <Text fill="#3f435a" layoutX="51.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastre-se">
+            <Text fill="#3f435a" layoutX="51.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastre-se">
                <font>
                   <Font size="35.0" />
                </font>
             </Text>
-            <Text fill="#3e42599b" layoutX="54.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vamos começar">
+            <Text fill="#3e42599b" layoutX="51.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vamos começar">
                <font>
                   <Font size="13.0" />
                </font>
@@ -28,11 +28,25 @@
                </font>
             </Text>
             <Button fx:id="feitoBtn" layoutX="380.0" layoutY="378.0" mnemonicParsing="false" onAction="#finalizaCadastro" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: #3F435A;" text="Feito" textFill="WHITE" underline="true" />
-            <PasswordField fx:id="senhaTextBox" layoutX="55.0" layoutY="310.0" onAction="#senhaUsuario" promptText="Senha" />
-            <PasswordField fx:id="confirmaSenhaTextBox" layoutX="55.0" layoutY="352.0" onAction="#confirmaSenhaUsuario" promptText="Confirma senha" />
-            <TextField fx:id="nomeTextBox" layoutX="51.0" layoutY="138.0" onAction="#nomeUsuario" promptText="Usuario" />
-            <TextField fx:id="emailTextBox" layoutX="51.0" layoutY="190.0" onAction="#emailUsuario" promptText="Email" />
-            <Button fx:id="voltarBtn" layoutX="380.0" layoutY="428.0" mnemonicParsing="false" onAction="#voltaTela" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: #3F435A;" text="Voltar" textFill="WHITE" underline="true" />
+            <PasswordField fx:id="senhaTextBox" layoutX="58.0" layoutY="310.0" onAction="#senhaUsuario" promptText="Senha" />
+            <PasswordField fx:id="confirmaSenhaTextBox" layoutX="58.0" layoutY="352.0" onAction="#confirmaSenhaUsuario" promptText="Confirma senha" />
+            <TextField fx:id="nomeTextBox" layoutX="58.0" layoutY="170.0" onAction="#nomeUsuario" promptText="Usuario" />
+            <TextField fx:id="emailTextBox" layoutX="58.0" layoutY="214.0" onAction="#emailUsuario" promptText="Email" />
+            <Button fx:id="voltarBtn" mnemonicParsing="false" onAction="#voltaTela" prefHeight="47.0" prefWidth="63.0" style="-fx-background-color: transparent;" text="&lt;-" textFill="#3f435a">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Text fill="RED" layoutX="58.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* As senhas não correspondem" visible="false" wrappingWidth="208.0030517578125">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Button layoutX="613.0" layoutY="1.0" mnemonicParsing="false" onAction="#fechaAba" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: transparent;" text="X" textFill="#3f435a" fx:id="xBtn">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>
